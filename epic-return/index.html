@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex">
+<title>Returning to the app</title>
+<style>
+  body { font-family: "Segoe UI", system-ui, sans-serif; margin: 0; padding: 48px 16px;
+         background: #F3F4F6; color: #1F2328; }
+  main { max-width: 560px; margin: 0 auto; background: #FFFFFF; border: 1px solid #D9DCE1;
+         border-radius: 8px; padding: 24px; }
+  h1 { font-size: 1.3rem; margin: 0 0 12px; }
+  p { line-height: 1.5; }
+  .muted { color: #57606A; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Returning to the app…</h1>
+  <p id="message">You signed in at your hospital. Your browser is now handing the result back
+    to the app, which is waiting on this computer or phone.</p>
+  <noscript><p>This page needs JavaScript to hand the sign-in back to the app.</p></noscript>
+  <p class="muted">This page only forwards your browser. It receives no records and no
+    password, and the code in its address cannot be used without a secret that stays in the
+    app on your device.</p>
+</main>
+<script src="return.js"></script>
+</body>
+</html>
