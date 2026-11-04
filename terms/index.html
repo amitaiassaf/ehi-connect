@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>OffTheRecord: terms of use and privacy notice</title>
+<style>
+  body { font-family: "Segoe UI", system-ui, sans-serif; margin: 0; padding: 32px 16px;
+         background: #F3F4F6; color: #1F2328; }
+  main { max-width: 720px; margin: 0 auto; background: #FFFFFF; border: 1px solid #D9DCE1;
+         border-radius: 8px; padding: 24px 28px; }
+  h1 { font-size: 1.45rem; margin: 0 0 8px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+  p, li { line-height: 1.55; }
+  ul { padding-left: 22px; }
+  a { color: #174A96; }
+  .muted { color: #57606A; font-size: 0.92rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>OffTheRecord — Terms of use and privacy notice</h1>
+  <p class="muted">Last updated: November 3, 2026. Publisher: Ticker Medical Inc., 447 Sutter St, Ste 506-1454, San Francisco, CA 94108.</p>
+  <p><b>In short: The app reduces identifying details but can miss some. Read every copy before you share it.</b></p>
+
+  <h2>1. What the app does</h2>
+  <p>OffTheRecord runs on your own Windows computer or Android phone. It helps you make a copy
+    of your medical records with identifying details reduced before you decide whether to share it.
+    The copy may still identify you; see section 5. On a computer you choose whether to check each
+    result yourself (careful mode) or let the app make a copy in one go (quick mode); the phone makes
+    the copy in one go and lets you look at, and add, the files it left out.</p>
+
+  <h2>2. Your records stay on your device</h2>
+  <ul>
+    <li>The app processes your medical records and saves its working files on your computer or
+      phone. It does not upload your records, identifying profile or copies to the publisher, and we
+      do not run a server that stores your medical records. Copies you choose to save or share can
+      leave this private storage, as explained below.</li>
+    <li>Hospital access uses the internet to open your chosen hospital's sign-in page and download
+      your records. On Windows, the hospital picker also loads Epic's public list of hospitals, and
+      sign-in uses the return page described below. You can also choose a storage provider or
+      receiving app when you save or share a copy.</li>
+    <li>You sign in on the hospital's own page in your web browser. The app does not receive your
+      password. The hospital gives the app an access token to download the records you authorized.
+      The app uses it for the current download, keeps it in application memory and does not
+      intentionally write it to its files.</li>
+    <li>On Windows, production hospital sign-in uses a return page hosted by GitHub at
+      https://offtherecordhealth.com/epic-return/. The page forwards the sign-in response
+      to the app. GitHub receives the page request, including the one-time code and technical
+      information such as your IP address. The app keeps a separate secret needed to use that code.
+      The page is not sent your medical records or hospital password. GitHub handles hosting
+      information under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy
+      statement</a>. Android production sign-in uses the same return page; test sign-ins can use the app's own return address.</li>
+    <li>On the phone, text recognition for scanned pages and pictures runs on the phone with its
+      model included in the app. Pictures are not sent to Google for text recognition.</li>
+    <li>We do not add advertising or analytics to the app, and we do not sell your medical records.
+      The app hands a copy to a storage provider or receiving app only when you choose to save or
+      share it. Those services receive the information needed to carry out your request.</li>
+  </ul>
+  <p>Buying the app or contacting us involves separate purchase and contact information. The app is not for sale yet. When it is, the app store or payment provider that handles your purchase collects payment information under its own terms, and we receive the order details we need for our records, taxes and refunds. If you email us, Cloudflare (which forwards our email) and Google (which hosts our mailbox) handle your message; we use it to answer you and keep it with our business records. Questions or support: contact@offtherecordhealth.com. Please do not send medical records,
+    identifying profiles, passwords or access tokens.</p>
+
+  <h2>3. What the app keeps on your device</h2>
+  <p>The app keeps, in its private storage: the details used to remove your information (names,
+    birth date, addresses, phone numbers, email addresses, record and insurance numbers; on a
+    computer you enter them, with a hospital connection they come from your chart), copies of the
+    records you add or download, its results, and your decisions about which files go into a
+    copy.</p>
+  <ul>
+    <li><b>On a computer</b>, your Windows account's access controls protect these files; the app
+      does not add encryption. Files stay until the app removes or replaces them, or you delete the
+      workspace. You can delete one workspace (Workspace &gt; Delete workspace) or all the medical data the app keeps on this computer (Workspace &gt; Delete all medical data). Delete all medical data keeps only your agreement to the terms and the app's settings. Your original files and copies saved elsewhere are not touched. When you uninstall, you choose whether to keep or delete the app's data; nothing is chosen for you, and if you cancel or the choice is unclear, the data is kept. Deleting at uninstall also removes your agreement to the terms and the app's settings.</li>
+    <li><b>On a phone</b>, the working files are in Android's app-private storage, which normally prevents other apps from reading them. The app turns off Android's cloud backup and phone-to-phone transfer for its data, so moving to a new phone does not bring your records along; some modified or nonstandard devices may not follow these settings. The app does not add its own encryption; protect your phone with a screen lock. Delete medical data, in the app's ⋮ menu, removes the medical data the app keeps and keeps only your agreement to the terms and its settings. Uninstalling normally deletes all of its private storage. Copies saved elsewhere can remain, including copies held by a storage or backup service you chose.</li>
+  </ul>
+  <p>Deleting the app's files does not delete copies already saved or sent elsewhere. Ordinary file
+    deletion is not a guarantee that data cannot be recovered from the device or a backup.</p>
+
+  <h2>4. Your shareable copy</h2>
+  <p>The copy contains only the results you approved, those that passed the automatic check, or
+    those you added without checking them (marked so in the copy). On a computer, it is saved in a folder you
+    choose. On a phone, it is kept in the app's private storage until you delete it; the app does not
+    save it to other folders. You decide where to save or send the copy. If you use Android's Share menu, the app gives
+    the selected copy to the receiving app you choose. A storage provider or recipient may upload,
+    keep, use or share it under its own terms. Check the copy and the recipient's terms before
+    sending it.</p>
+
+  <h2>5. Removing details is a privacy aid, not a guarantee</h2>
+  <p>The app removes the details it can find, but it can miss things: a nickname, a relative named
+    in ordinary text, a rare detail, or text misread from a scan. On a computer, dates can be counted
+    from a private starting point (anyone who knows one real date can work out the others), hidden,
+    or kept; on the phone, the real dates are kept and only your birth date is removed. Removing
+    details does not guarantee that the copy is anonymous or certify that it meets HIPAA's
+    de-identification rules. Dates, rare events and combinations of details may still identify you
+    or another person. A passed automatic check or bulk approval is not a promise that the copy is
+    safe to share. <b>Read your copy before you send it.</b> The app does not give medical advice and
+    does not change your medical records.</p>
+
+  <h2>6. The hospital connection</h2>
+  <p>Connecting uses the hospital's patient access, which gives the standard part of your chart
+    (problems, medications, allergies, test results, vital signs, immunizations, procedures, visits,
+    reports and clinical notes). It is not your complete record; messages, billing and most scanned
+    or outside documents are not included. Your hospital's own terms apply to your account there.
+    You can withdraw the app's access in your hospital's patient portal. Withdrawing access stops
+    future access through that authorization; it does not delete records or copies already
+    downloaded or shared. Section 3 explains local storage.</p>
+
+  <h2>7. Children and other people's records</h2>
+  <p>The app is for adults aged 18 and over. Use it for your own records or records you are legally allowed to manage, including a child's records when you have the necessary authority. Your authority must cover access and any sharing you choose. People under 18 may not operate the app.</p>
+
+  <h2>8. Changes and contact</h2>
+  <p>We will post changes here with a new date. Changes will not take away rights you already have.
+    If a change materially alters how we use or share information already collected, we will provide
+    any notice and obtain any consent the law requires before applying it. Questions or security
+    reports: contact@offtherecordhealth.com. Please do not include medical records, passwords or access
+    tokens.</p>
+
+  <h2>9. Warranty, responsibility and disputes</h2>
+  <p>We provide the app “as is”, to the extent the law allows. We do not promise that it removes
+    every identifying detail, works without errors or suits every purpose. This does not take away
+    warranties the law requires or promises we expressly make. Read each copy before sharing it, and
+    use the app only for your own records or records you are allowed to manage.</p>
+  <p>You choose whether and with whom to share a copy. To the extent the law allows, we are not
+    liable for harm caused solely by the recipient, your hospital's or Epic's systems, or a failure
+    of your device or other software that is outside our control. This does not exclude liability
+    for our own failure to use reasonable care, fraud, gross negligence or willful misconduct.</p>
+  <p>Some places do not allow certain warranty or liability limits, so those limits may not apply to
+    you. Nothing in these terms takes away consumer protection rights or other rights and remedies
+    that the law does not allow you to waive. Nothing limits privacy or security duties we owe you
+    under applicable law or any notice we must give you.</p>
+  <p>California law governs these terms. A dispute about the terms or the app may be brought in a
+    state or federal court in California that has jurisdiction. This does not take away protections
+    under the law of the state where you live that cannot be waived, or any right you have to bring
+    a claim in another court.</p>
+</main>
+</body>
+</html>
